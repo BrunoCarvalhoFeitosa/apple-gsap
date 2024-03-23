@@ -43,7 +43,7 @@ export const ModelSection = () => {
     }, [size])
 
     useEffect(() => {
-        if (typeof document !== undefined) {
+        if (typeof document !== "undefined") {
             setIsReady(true)
         }
     }, [])
@@ -83,20 +83,22 @@ export const ModelSection = () => {
                             item={model}
                             size={size}
                         />
-                        <Canvas
-                            className="w-full h-full"
-                            eventSource={isReady && document.body}
-                            style={{
-                                position: "fixed",
-                                top: 0,
-                                bottom: 0,
-                                left: 0,
-                                right: 0,
-                                overflow: "hidden"
-                            }}
-                        >
-                            <View.Port />
-                        </Canvas>
+                        {isReady && (
+                            <Canvas
+                                className="w-full h-full"
+                                eventSource={document?.body}
+                                style={{
+                                    position: "fixed",
+                                    top: 0,
+                                    bottom: 0,
+                                    left: 0,
+                                    right: 0,
+                                    overflow: "hidden"
+                                }}
+                            >
+                                <View.Port />
+                            </Canvas>
+                        )}
                     </div>
                     <div className="mx-auto w-full">
                         <p className="mb-5 text-sm font-light text-center">

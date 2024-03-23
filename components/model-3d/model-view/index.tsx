@@ -1,6 +1,7 @@
 "use client"
 import { MutableRefObject, Suspense } from "react"
 import dynamic from "next/dynamic"
+import { StaticImageData } from "next/image"
 import * as THREE from "three"
 import { OrbitControls, PerspectiveCamera, View } from "@react-three/drei"
 import { Lights } from "@/components/model-3d/lights"
@@ -20,7 +21,7 @@ interface ModelViewProps {
     item: {
         title: string
         color: string[]
-        img: string
+        img: string | StaticImageData
     }
 }
 
