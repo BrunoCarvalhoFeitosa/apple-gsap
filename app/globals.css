@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  width: 100dvw;
+  overflow-x: hidden;
+  height: 100%;
+  background: #000;
+  border-color: #3b3b3b;
+  user-select: none;
+}
+
+canvas {
+  touch-action: none;
+}
+
+.screen-max-width {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  position: relative;
+  max-width: 1120px;
+}
+
+.swiper-pagination-bullet {
+  background: #353535 !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 40px !important;
+  height: 12px !important;
+  border-radius: 8px !important;
+  background: #555 !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  background: #333 !important;
+  width: 50px !important  ;
+  height: 50px!important;
+  border-radius: 50% !important;
+  color: #FFF !important;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 22px!important;
+}
+
+.swiper-pagination-fraction {
+  color: #1C1C1C !important;
+  font-weight: 900 !important;
+}
+
+@layer utilities {
+  .bg-zinc {
+    @apply bg-[#111]
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center
+  }
+
+  .nav-height {
+    @apply h-[calc(100vh-60px)]
+  }
+
+  .btn {
+    @apply px-5 py-2 rounded-3xl bg-blue-500 my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue-500 hover:border-blue-500
+  }
+
+  .color-container {
+    @apply flex items-center justify-center px-4 py-4 h-12 rounded-full bg-zinc-900 backdrop-blur
+  }
+
+  .size-btn-container {
+    @apply flex items-center justify-center p-1 h-12 rounded-full bg-zinc-900 backdrop-blur ml-3 gap-1
+  }
+
+  .size-btn {
+    @apply w-10 h-10 text-sm flex justify-center items-center bg-white text-black rounded-full transition-all
+  }
+
+  .common-padding {
+    @apply sm:py-24 py-20 sm:px-10 px-5
+  }
+
+  .section-heading {
+    @apply text-zinc-700 lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-medium opacity-0 translate-y-20
+  }
+
+  .feature-text {
+    @apply text-zinc-700 max-w-md text-lg md:text-xl font-semibold opacity-0 translate-y-[100px]
+  }
+
+  .feature-text-container {
+    @apply w-full flex-center flex-col md:flex-row mt-10 md:mt-16 gap-5
+  }
+
+  .feature-video {
+    @apply w-full h-full object-cover object-center scale-150 opacity-0
+  }
+
+  .feature-video-container {
+    @apply w-full flex flex-col md:flex-row gap-5 items-center
+  }
+
+  .link {
+    @apply text-blue-500 hover:underline cursor-pointer flex items-center text-xl
+  }
+
+  .control-btn {
+    @apply ml-4 p-4 rounded-full bg-zinc-800 backdrop-blur flex-center
+  }
+
+  .hero-title {
+    @apply text-center font-semibold text-3xl text-gray-100 opacity-0
+  }
+
+  .hiw-title {
+    @apply text-4xl lg:text-7xl font-semibold text-center opacity-0 translate-y-20
+  }
+
+  .hiw-subtitle {
+    @apply text-zinc-700 font-semibold text-xl md:text-2xl py-10 text-center opacity-0 translate-y-20
+  }
+
+  .hiw-video {
+    @apply absolute w-[95%] h-[90%] rounded-[56px] overflow-hidden opacity-0 translate-y-20
+  }
+
+  .hiw-text-container {
+    @apply flex md:flex-row flex-col justify-between items-start gap-24
+  }
+
+  .hiw-text {
+    @apply text-zinc-700 text-xl font-normal md:font-semibold
+  }
+
+  .hiw-bigtext {
+    @apply text-white text-3xl lg:text-5xl font-normal md:font-semibold my-2
+  }
+
+  .capture-bigtext {
+    @apply mb-10 bg-gradient-to-r from-30% from-green-500 to-70% to-yellow-600 bg-clip-text text-transparent text-3xl lg:text-7xl font-normal leading-none md:font-semibold translate-y-16
+  }
+
+  .capture-subtitle {
+    @apply text-white text-sm md:text-2xl font-normal md:font-semibold translate-y-16
+  }
+
+  .capture-legend {
+    @apply text-zinc-700 text-xs md:text-base lg:text-lg font-normal md:font-semibold translate-y-16
+  }
+  
+  .camera-title {
+    @apply text-white md:text-xl text-3xl font-normal md:font-semibold translate-y-16
+  }
+
+  .camera-description {
+    @apply text-white text-base text-center font-light translate-y-16
+  }
+
+  .zoom-title {
+    @apply text-white md:text-7xl text-3xl text-center font-normal md:font-semibold
+  }
+
+  .zoom-subtitle {
+    @apply text-4xl lg:text-7xl font-semibold text-center
+  }
+
+  .zoom-description {
+    @apply text-zinc-700 font-semibold text-xl md:text-2xl pt-2 pb-10 text-center
+  }
+
+  .zoom-text {
+    @apply mb-6 text-white text-base text-center font-light
+  }
+
+  .action-button-title {
+    @apply text-white text-4xl lg:text-7xl font-semibold
+  }
+
+  .action-button-text {
+    @apply text-white text-base font-light
+  }
+
+  .action-button-description {
+    @apply text-zinc-700 text-lg md:font-semibold
+  }
+
+  .transfer-title {
+    @apply text-white text-4xl lg:text-7xl font-semibold
+  }
+
+  .transfer-text {
+    @apply text-zinc-700 text-xl font-normal md:font-semibold
+  }
+
+  .transfer-bigtext {
+    @apply text-white text-3xl lg:text-5xl font-normal md:font-semibold my-2
+  }
+
+  .transfer-bigtext {
+    @apply text-white text-3xl lg:text-5xl font-normal md:font-semibold my-2
+  }
+
+  .safety-title {
+    @apply text-white text-2xl md:text-5xl lg:text-6xl font-semibold
+  }
+
+  .system-title {
+    @apply text-4xl lg:text-7xl font-semibold
+  }
+
+  .ways-to-shop-title {
+    @apply text-white text-xl lg:text-4xl font-semibold
+  }
+
+  .video-carousel_container {
+    @apply w-[100%] md:h-[70vh] sm:h-[50vh] h-[60vh]
+  }
+
+  .g_fadeIn {
+    @apply opacity-0 translate-y-[100px]
+  }
+}
