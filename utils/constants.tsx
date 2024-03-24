@@ -1,15 +1,42 @@
 import { blackImg, blueImg, camera1Img, camera2Img, camera3Img, camera4Img, camera5Img, camera6Img, camera7Img, waysShopCarrierDealsImg, waysShopCommunityImg, waysShopExploreShoppingExperienceImg, waysShopFlexibleDeliveryImg, waysShopLiveSpecialistImg, waysShopPayOverTimeImg, waysShopTradeInImg, whiteImg, yellowImg } from "@/utils/index"
   
 export const navLists = [
-    "Store",
-    "Mac",
-    "iPad",
-    "iPhone",
-    "Watch",
-    "Vision",
-    "Air Pods",
-    "TV & Home",
-    "Support"
+    {
+        link: "https://www.apple.com/store",
+        name: "Store"
+    },
+    {
+        link: "https://www.apple.com/mac",
+        name: "Mac"
+    },
+    {
+        link: "https://www.apple.com/ipad",
+        name: "iPad"
+    },
+    {
+        link: "https://www.apple.com/iphone",
+        name: "iPhone"
+    },
+    {
+        link: "https://www.apple.com/watch",
+        name: "Watch"
+    },
+    {
+        link: "https://www.apple.com/apple-vision-pro",
+        name: "Vision"
+    },
+    {
+        link: "https://www.apple.com/airpods",
+        name: "Air Pods"
+    },
+    {
+        link: "https://www.apple.com/tv-home",
+        name: "TV & Home"
+    },
+    {
+        link: "https://support.apple.com/?cid=gn-ols-home-hp-tab",
+        name: "Support"
+    }
 ]
   
 export const hightlightsSlides = [

@@ -79,7 +79,7 @@ export const ActionButtonSection = () => {
                         switching on the lights in your living room and playing music.
                     </p>
                 </div>
-                <div className="mt-20 mx-auto flex flex-col lg:flex-row justify-center items-center gap-24 w-[80%]">
+                <div className="mt-20 mx-auto flex flex-col lg:flex-row justify-center items-center gap-24 lg:w-[80%]">
                     <div className="flex-1">
                         <div className="mb-14">
                             <p className="action-button-description">

@@ -18,6 +18,20 @@ body {
   user-select: none;
 }
 
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #111;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 20px;
+  border: 3px solid #111;
+}
+
 canvas {
   touch-action: none;
 }

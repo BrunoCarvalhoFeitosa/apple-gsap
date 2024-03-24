@@ -54,7 +54,7 @@ export const ZoomSection = () => {
                     <h4 className="zoom-description">
                         with the 120 mm lens
                     </h4>
-                    <p className="mx-auto w-2/3 zoom-text">
+                    <p className="mx-auto md:w-2/3 zoom-text">
                         For iPhone 15 Pro Max, we designed a 5x Telephoto camera 
                         with the longest optical zoom of any iPhone ever to fit 
                         in our compact Pro camera system. Now you can take sharper 

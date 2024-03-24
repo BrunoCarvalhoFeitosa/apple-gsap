@@ -22,9 +22,12 @@ export const Navbar = () => {
                     <ul className="flex items-center gap-x-4">
                         {navLists.map((item, index) => (
                             <li key={index} className="text-xs">
-                                <a className="transition-all duration-100 hover:text-gray-400 hover:scale-110 cursor-pointer">
-                                    {item}
-                                </a>
+                                <Link
+                                    href={item.link}
+                                    className="transition-all duration-100 hover:text-gray-400 hover:scale-110 cursor-pointer"
+                                >
+                                    {item.name}
+                                </Link>
                             </li>
                         ))}
                     </ul>

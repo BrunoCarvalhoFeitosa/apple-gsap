@@ -70,7 +70,11 @@ export const CameraSection = () => {
                         effect={"coverflow"}
                         grabCursor={true}
                         centeredSlides={false}
-                        slidesPerView={2}
+                        slidesPerView={1}
+                        breakpoints={{
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 2 }
+                        }}
                         spaceBetween={0}
                         loop={true}
                         navigation={true}

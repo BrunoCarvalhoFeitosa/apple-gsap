@@ -69,20 +69,20 @@ export const FeaturesSection = () => {
                         </div>
                         <div className="relative flex flex-col w-full">
                             <div className="feature-video-container">
-                                <div className="flex-1 h-[70vh] overflow-hidden">
+                                <div className="flex-1 h-[40vh] md:h-[40vh] lg:h-[70vh] overflow-hidden">
                                     <Image
                                         src={explore1Img}
-                                        className="feature-video g_grow"
                                         alt="Titanium"
                                         title="Titanium"
+                                        className="feature-video g_grow"
                                     />
                                 </div>
-                                <div className="flex-1 h-[70vh] overflow-hidden">
+                                <div className="flex-1 h-[40vh] md:h-[40vh] lg:h-[70vh] overflow-hidden">
                                     <Image
                                         src={explore2Img}
-                                        className="feature-video g_grow"
                                         alt="Titanium"
                                         title="Titanium"
+                                        className="feature-video g_grow"
                                     />
                                 </div>
                             </div>

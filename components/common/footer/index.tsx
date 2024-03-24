@@ -1,7 +1,5 @@
 "use client"
-import Image from "next/image"
 import Link from "next/link"
-import { appleImg } from "@/utils"
 
 export const Footer = () => {
     return (
@@ -13,28 +11,40 @@ export const Footer = () => {
                             iPhone
                         </h3>
                     </div>
-                    <div className="flex gap-x-20 pt-12">
+                    <div className="flex flex-col md:flex-row gap-20 pt-12">
                         <ul className="flex flex-col gap-y-2">
                             <li className="text-sm font-light text-zinc-600">
                                 Explore iPhone
                             </li>
-                            <li className="text-2xl font-semibold text-white">
-                                Explore All iPhone
+                            <li className="text-2xl font-semibold text-white cursor-pointer">
+                                <Link href="https://www.apple.com/iphone">
+                                    Explore All iPhone
+                                </Link>
                             </li>
-                            <li className="text-2xl font-semibold text-white">
-                                iPhone 15 Pro
+                            <li className="text-2xl font-semibold text-white cursor-pointer">
+                                <Link href="https://www.apple.com/iphone-15-pro">
+                                    iPhone 15 Pro
+                                </Link>
                             </li>
-                            <li className="text-2xl font-semibold text-white">
-                                iPhone 15
+                            <li className="text-2xl font-semibold text-white cursor-pointer">
+                                <Link href="https://www.apple.com/iphone-15">
+                                    iPhone 15
+                                </Link>
                             </li>
-                            <li className="text-2xl font-semibold text-white">
-                                iPhone 14
+                            <li className="text-2xl font-semibold text-white cursor-pointer">
+                                <Link href="https://www.apple.com/iphone-14">
+                                    iPhone 14
+                                </Link>
                             </li>
-                            <li className="text-2xl font-semibold text-white">
-                                iPhone 13
+                            <li className="text-2xl font-semibold text-white cursor-pointer">
+                                <Link href="https://www.apple.com/iphone-13">
+                                    iPhone 13
+                                </Link>
                             </li>
-                            <li className="text-2xl font-semibold text-white">
-                                iPhone SE
+                            <li className="text-2xl font-semibold text-white cursor-pointer">
+                                <Link href="https://www.apple.com/iphone-se">
+                                    iPhone SE
+                                </Link>
                             </li>
                         </ul>
                         <ul className="flex flex-col gap-y-2">
@@ -42,28 +52,44 @@ export const Footer = () => {
                                 Go Further
                             </li>
                             <li className="text-sm font-semibold text-white">
-                                iPhone Support
+                                <Link href="https://support.apple.com/iphone?cid=gn-ols-iphone-psp-explore">
+                                    iPhone Support
+                                </Link>
                             </li>
                             <li className="text-sm font-semibold text-white">
-                                AppleCare+ for iPhone
+                                <Link href="https://www.apple.com/support/products/iphone">
+                                    AppleCare+ for iPhone
+                                </Link>
                             </li>
                             <li className="text-sm font-semibold text-white">
-                                iOS 17
+                                <Link href="https://www.apple.com/ios/ios-17">
+                                    iOS 17
+                                </Link>
                             </li>
                             <li className="text-sm font-semibold text-white">
-                                Apps by Apple
+                                <Link href="https://www.apple.com/apps">
+                                    Apps by Apple
+                                </Link>
                             </li>
                             <li className="text-sm font-semibold text-white">
-                                iPhone Privacy
+                                <Link href="https://www.apple.com/privacy">
+                                    iPhone Privacy
+                                </Link>
                             </li>
                             <li className="text-sm font-semibold text-white">
-                                iCloud+
+                                <Link href="https://www.apple.com/icloud">
+                                    iCloud+
+                                </Link>
                             </li>
                             <li className="text-sm font-semibold text-white">
-                                Wallet, Pay, Card
+                                <Link href="https://www.apple.com/wallet">
+                                    Wallet, Pay, Card
+                                </Link>
                             </li>
                             <li className="text-sm font-semibold text-white">
-                                Siri
+                                <Link href="https://www.apple.com/siri">
+                                    Siri
+                                </Link>
                             </li>
                         </ul>
                         <ul className="flex flex-col gap-y-2">
@@ -71,7 +97,9 @@ export const Footer = () => {
                                 Compare iPhone
                             </li>
                             <li className="text-sm font-semibold text-white">
-                                Switch from Android
+                                <Link href="https://www.apple.com/iphone/switch">
+                                    Switch from Android
+                                </Link>
                             </li>
                         </ul>
                     </div>

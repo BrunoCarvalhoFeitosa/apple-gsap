@@ -29,7 +29,7 @@ export const TransferSection = () => {
                         your gigabits.
                     </h2>
                 </div>
-                <div className="mt-16 mx-auto w-[70%]">
+                <div className="mt-16 mx-auto md:w-[70%]">
                     <Image
                         src={transferImg}
                         alt="Up to 20x faster file transfers"
@@ -37,7 +37,7 @@ export const TransferSection = () => {
                         className="w-full object-cover"
                     />
                 </div>
-                <div id="transfer-description" className="mt-8 grid grid-cols-4 place-items-center gap-7 opacity-0 translate-y-20">
+                <div id="transfer-description" className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-7 opacity-0 translate-y-20">
                     <div className="flex flex-col items-center">
                         <span className="transfer-text">
                             Up to

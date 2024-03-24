@@ -39,7 +39,7 @@ export const SystemSection = () => {
                                 src={systemContactPosterImg}
                                 alt="Contact Poster. Create your own poster that contacts will see when you call."
                                 title="Contact Poster. Create your own poster that contacts will see when you call."
-                                className="w-full md:w-min object-cover"
+                                className="w-full lg:w-min object-cover"
                             />
                         </div>
                         <div>
@@ -54,7 +54,7 @@ export const SystemSection = () => {
                                 src={systemNamedropPosterImg}
                                 alt="NameDrop. Want to swap contact info with someone? Just bring your iPhone close to theirs."
                                 title="NameDrop. Want to swap contact info with someone? Just bring your iPhone close to theirs."
-                                className="w-full md:w-min object-cover"
+                                className="w-full lg:w-min object-cover"
                             />
                         </div>
                         <div>
@@ -69,7 +69,7 @@ export const SystemSection = () => {
                                 src={systemStickersPosterImg}
                                 alt="Live Stickers. Touch and hold an object in a photo to lift it from the background and create a sticker."
                                 title="Live Stickers. Touch and hold an object in a photo to lift it from the background and create a sticker."
-                                className="w-full md:w-min object-cover"
+                                className="w-full lg:w-min object-cover"
                             />
                         </div>
                         <div>

@@ -24,7 +24,7 @@ export const WaysToShopSection = () => {
     return (
         <section id="ways-to-shop" className="common-padding opacity-0 translate-y-20">
             <div className="screen-max-width">
-                <div className="mb-8 flex items-center justify-between">
+                <div className="mb-8 flex flex-col md:flex-row md:items-center md:justify-between gap-y-2">
                     <h3 className="ways-to-shop-title">
                         Ways to shop and save at Apple.
                     </h3>
@@ -45,7 +45,11 @@ export const WaysToShopSection = () => {
                     <Swiper
                         grabCursor={true}
                         centeredSlides={false}
-                        slidesPerView={3}
+                        slidesPerView={1}
+                        breakpoints={{
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 }
+                        }}
                         spaceBetween={30}
                         loop={true}
                         autoplay={true}
@@ -54,7 +58,7 @@ export const WaysToShopSection = () => {
                         modules={[Keyboard, Autoplay]}
                     >
                         {waysToShop.map((ways) => (
-                            <SwiperSlide key={ways.id} className="w-full p-8 min-h-[350px] rounded-md bg-zinc overflow-hidden">
+                            <SwiperSlide key={ways.id} className="w-full p-8 min-h-[380px] lg:min-h-[350px] rounded-md bg-zinc overflow-hidden">
                                 <div className="w-full h-full flex flex-col gap-y-4">
                                     <div>
                                         <Image
