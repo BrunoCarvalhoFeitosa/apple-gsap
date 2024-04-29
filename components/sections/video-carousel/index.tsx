@@ -72,7 +72,11 @@ export const VideoCarousel = () => {
                                     muted
                                     autoPlay={false}
                                     controls={false}
-                                    ref={el => (videoRefs.current[index] = el)}
+                                    ref={(el) => {
+                                        if (el) {
+                                            videoRefs.current[index] = el;
+                                        }
+                                    }}
                                     title="Highlights"
                                     onPlay={() => setVideoStates(prevStates => {
                                         const updatedStates = [...prevStates]
