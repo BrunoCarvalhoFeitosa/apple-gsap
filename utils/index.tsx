@@ -46,6 +46,7 @@ import waysShopFlexibleDelivery from "@/public/assets/images/ways-to-shop-flexib
 import waysShopLiveSpecialist from "@/public/assets/images/ways-to-shop-live-specialist-icon.png"
 import waysShopCommunity from "@/public/assets/images/ways-to-shop-community-icon.png"
 import waysShopExploreShoppingExperience from "@/public/assets/images/ways-to-shop-explore-shopping-experience-icon.png"
+import scroll from "@/public/assets/images/scroll.png"
 import loader from "@/public/assets/svg/loader.svg"
 import apple from "@/public/assets/svg/apple.svg"
 import search from "@/public/assets/svg/search.svg"
@@ -104,6 +105,7 @@ export const waysShopFlexibleDeliveryImg = waysShopFlexibleDelivery
 export const waysShopLiveSpecialistImg = waysShopLiveSpecialist
 export const waysShopCommunityImg = waysShopCommunity
 export const waysShopExploreShoppingExperienceImg = waysShopExploreShoppingExperience
+export const scrollImg = scroll
 export const loaderImg = loader
 export const appleImg = apple
 export const searchImg = search
