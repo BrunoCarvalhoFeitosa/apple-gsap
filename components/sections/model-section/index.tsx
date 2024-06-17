@@ -56,7 +56,7 @@ export const ModelSection = () => {
     }, [])
 
     return (
-        <section className="common-padding">
+        <section className="common-padding xl:min-w-[101dvw]">
             <div className="screen-max-width">
                 <div className="mb-5">
                     <h2 id="model-title" className="section-heading">
